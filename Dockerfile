@@ -26,4 +26,4 @@ RUN npm run build
 EXPOSE 8084
 
 # 定义 Docker 镜像运行的命令
-# CMD [ "node", "server-prod.js" ]
+CMD [ "node", "server-prod.js" ]
