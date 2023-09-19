@@ -1,5 +1,5 @@
 # 使用官方 Node.js镜像
-FROM node:20.6.1
+FROM node:14.14.0
 
 RUN mkdir -p /home/www/koa2-ssr-vite-vue3-pinia-template
 
@@ -10,6 +10,8 @@ WORKDIR /home/www/koa2-ssr-vite-vue3-pinia-template
 COPY package*.json /home/www/koa2-ssr-vite-vue3-pinia-template/
 
 RUN ls
+RUN node -v
+RUN npm -v
 # 安装应用程序依赖项
 RUN npm install --registry=https://registry.npmmirror.com
 
