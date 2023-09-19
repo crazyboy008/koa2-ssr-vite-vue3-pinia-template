@@ -7,7 +7,7 @@ RUN mkdir -p /home/www/koa2-ssr-vite-vue3-pinia-template
 WORKDIR /home/www/koa2-ssr-vite-vue3-pinia-template
 
 # 将 package.json 和 package-lock.json 复制到工作目录
-COPY package*.json /home/www/koa2-ssr-vite-vue3-pinia-template/
+COPY package*.json /home/www/koa2-ssr-vite-vue3-pinia-template
 
 # 安装应用程序依赖项
 RUN npm install --registry=https://registry.npmmirror.com
