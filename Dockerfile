@@ -19,7 +19,7 @@ COPY . .
 RUN ls
 ENV NODE_ENV=production
 
-RUN npm run build
+RUN npm run build --max-old-space-size=150
 
 # 开放端口供应用程序使用
 EXPOSE 8084
